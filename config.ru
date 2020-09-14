@@ -2,7 +2,7 @@ require 'rack/reverse_proxy'
 
 use Rack::ReverseProxy do
   reverse_proxy_options :preserve_host => true
-  reverse_proxy '/', 'YOUR SITE'
+  reverse_proxy '/', 'eporner.com'
 end
 
 app = proc do |env|
